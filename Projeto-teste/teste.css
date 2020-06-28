@@ -116,4 +116,325 @@ nav li a:hover {
     background-position-y: 25%;
     height: 440px;
 }
+ 
+.conteudo {
+    width: 40%;
+    margin: 60px 130px;
+    float: left;
+}
+
+.conteudo a {
+    text-decoration: none;
+}
+
+.conteudo h1 {
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #032766;
+    margin: 0;
+}
+
+.conteudo h2 {
+    color: #72120b;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.conteudo p {
+    text-align: justify;
+    font-size: 18px;
+    color: #aba898;
+}
+
+.bottom {
+    background-color: #72120b;
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff; 
+}
+
+.bottom:hover {
+   background-color: #4f0e0a;
+   transition: background-color 0.2s linear; 
+}
+
+.img-conteudo {
+    width: 450px;
+    height: 320px;
+    float: right;
+    margin: 50px 90px 0 0;
+}
+
+.img-conteudo img {
+    width: 100%;
+    height: 100%; 
+}
+
+.informacoes {
+    background-color: #123f7a;
+    height: 530px;
+    clear: both; /* ao usar o float a proxima div (ou qualquer caixa) fica em cima da do float, o clear:both limpa
+    tudo e faz ficar em baixo da div com float */
+}
+
+.informacoes {
+    display: flex;
+    padding: 30px 100px;
+}
+
+.informacoes a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.info {
+    width: 300px;
+    height: 530px;
+    border: 2px solid rgba(251, 251, 251, 0.13);
+    border-radius: 12px; 
+    margin-left: 70px; 
+}
+
+.info img {
+    margin: 15px
+}
+
+.info h2 {
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info p {
+    padding: 20px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.bottom-main{
+    background-color: #72120b;
+    display: inline-block;
+    padding: 20px 70px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff; 
+    margin: 25px 35px;
+}
+
+.info:hover {
+    background-color: rgba(199, 203, 209, 0.13);
+}
+
+
+.titulo {
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+.titulo h1, h2 {
+    font-size: 40px;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo h1 {
+    color: #123f7a;
+}
+
+.titulo h2 {
+    color: #72120b;
+}
+
+.formulario {
+    width: 900px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+#alinhamento {
+    display: flex; 
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+}
     
+.form-input input {
+    width: 446px;
+    padding: 20px;
+    margin: 0 10px 10px 0;
+    border-radius: 7px;
+    border: none;  /* o border none tira uma cor escura que aparece ao colocar o radius*/
+    background-color: #eee;
+    outline: none; /*tira o preto que fica quando a pessoa clica dentro do formulário para preencher*/
+    font-size: 18px;
+}
+
+#envio {
+    width: 100%;
+    color: #fff;
+    background-color: #72120b;
+}
+
+.text textarea{
+    background-color: #eee;
+    border: none;
+    width: 420px;
+    height: 160px;
+    padding: 20px;
+    resize: none;  /* o resize serve pra tirar a opção da pessoas ajustar o tamanho do texteare*/
+    outline: none;
+    font-size: 18px;
+}
+
+.maps {
+    margin-top: 100px;
+}
+
+.maps iframe {
+    width: 100%;
+}
+
+.info-add {
+    background-color: #123f7a;
+    height: 250px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    width: 980px;
+   
+}
+
+.img-footer {
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.img-footer img {
+    width: 220px;
+    margin: 60px 70px 0 0;
+}
+
+
+.info-footer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 40px 0 40px;
+}
+
+
+.info-footer p {
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border-right: 2px solid;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+
+.i-1 {
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 0px;
+    width: 270px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+   
+}
+.i-1 i {
+    margin-right: 10px;
+}
+
+.rodape-chat {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0 0 30px;
+}
+
+.rodape-chat a {
+    text-decoration: none;  
+}
+
+.item-wpp a {
+    background-color: #2ba531;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 17px;
+    padding: 13px 0px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+}
+
+.item-wpp a:hover {
+    background-color: darkgreen;
+}
+
+.item-on a {
+    background-color: #00b29c;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 17px;
+    padding: 13px 0px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.item-on i {
+    margin: 0 5px 0 7px;
+}
+
+.item-wpp i {
+    margin: 0 5px 0 6px;
+}
+.item-on a:hover {
+    background-color: #0b797d;
+}
+
+.projeto-web {
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.projeto-web h5 {
+    margin: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projeto-web img {
+    margin-top: 8px;
+}

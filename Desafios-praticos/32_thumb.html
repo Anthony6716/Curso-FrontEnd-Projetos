@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>thumb</title>
+        <meta charset="utf-8">
+
+        <style>
+            a{
+               display: block;
+               margin: 10px;
+               position: relative; 
+            }
+
+            a img{
+                width: 50%;
+                display: block;
+            }
+
+            a::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                background: transparent;
+                transition: all .5s;
+            }
+
+            a:hover::before{
+                background: rgba(0, 0, 0, .5);
+            }
+
+            a:hover::after{
+                content: 'Veja';
+                display: block;
+                position: absolute;
+                border: 3px solid #f2f2f2;
+                color: #f2f2f2;
+                top: 50%;
+                left: 25%;
+                padding: 10px 10px;
+                transform: translate(-25%, -25%);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Estrutura Básica</h1>
+
+        <section>
+            <article>
+                <a href="#">
+                    <img src="../Imagens-Strata/01.jpg" alt="">
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="../Imagens-Strata/02.jpg" alt="">
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="../Imagens-Strata/03.jpg" alt="">
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="../Imagens-Strata/04.jpg" alt="">
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="../Imagens-Strata/05.jpg" alt="">
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="../Imagens-Strata/06.jpg" alt="">
+                </a>
+            </article>
+        </section>
+    </body>
+</html>

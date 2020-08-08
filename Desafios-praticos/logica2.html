@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        var n1 = prompt("Digite um número")
+        n1 = parseFloat(n1)
+
+        var n2 = prompt("Digite outro número")
+        n2 = parseFloat(n2)
+
+        var media = (n1 + n2) / 2
+
+        alert(media > 5)
+
+        if(media > 5){
+            alert("Parabéns! voce foi aprovado")
+        } else{
+            alert("Desculpe, mas nao foi dessa vez")
+        }*/
+
+
+        /*
+        var n1 = prompt("Jogador 1 Digite um número")
+        n1 = parseInt(n1)
+
+        var n2 = prompt("Jogador 2 Digite outro número:")
+        n2 = parseInt(n2)
+
+        if(n1 === n2){
+            alert("Voces empataram")  
+        }
+
+        else{
+            alert("Vamos sortear outro número para decidir o vencedor")
+            var sorteio = parseInt(Math.random()*2)
+            alert(sorteio)
+
+            if(sorteio === 0){
+
+                if(n1 < n2){
+                    alert("Ganhou o jogador 1")
+                }
+
+                else{
+                    alert("Ganhou o jogador 2")
+                }
+            }
+
+            else{
+                if(n1 > n2){
+                    alert("Ganhou o jogador 1")
+                }
+                else{
+                    alert("Ganhou o jogador 2")
+                }
+            }
+        }*/
+
+
+
+        /* Operadores Lógicos */
+
+/*
+        var n1 = prompt("Jogador 1 Digite um número")
+        n1 = parseFloat(n1)
+
+        var n2 = prompt("Jogador 2 Digite outro número:")
+        n2 = parseFloat(n2)
+
+       var media = (n1+n2) / 2
+
+        if(media > 5 &&  n1 > 0 && n2 > 0){  and no caso esta sendo usado no if, entao quando a nota menor que zero sera else
+            alert("Parabéns! Você foi aprovado")
+        }
+
+        else{
+            alert("Desculpe, mas não foi dessa vez")
+        }
+*/
+
+        var n1 = prompt("Jogador 1 Digite um número")
+        n1 = parseFloat(n1)
+
+        var n2 = prompt("Jogador 2 Digite outro número:")
+        n2 = parseFloat(n2)
+
+       var media = (n1+n2) / 2
+
+        if(n1 === 0 || n2 === 0 || media <=5){
+            alert("Desculpe, mas não foi dessa vez")
+        }
+
+        else{
+            alert("Parabéns você foi aprovado")
+        }
+        
+    </script>
+
+</body>
+</html>

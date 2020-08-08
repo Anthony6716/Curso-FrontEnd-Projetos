@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+
+         <style>
+        @keyframes slide{
+            0%{
+                transform: translateX(0);
+            }
+            22%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(-50vw);
+            }
+            47%{
+                transform: translateX(-50vw);
+            }
+            50% {
+                transform: translateX(-100vw);                    
+            }
+            72% {
+                transform: translateX(-100vw);                    
+            }
+            75% {
+                transform: translateX(-150vw);                    
+            }
+            97% {
+                transform: translateX(-150vw);                    
+            }
+            100%{
+                transform: translateX(0);         
+            }
+        
+
+        }
+        body{
+            font-family: sans-serif;
+            color: white;
+            background: #1a1818;
+            margin: 0;
+        }
+        
+        #slide-externo{
+            width: 50vw;
+            height: 50vh;
+            border: 10px solid white;
+            box-shadow: 0 0 10px black;
+            overflow: hidden;
+            margin-left: 10vw;
+        }
+        
+        #slide-interno{
+            display: flex;
+            animation: slide 15s  infinite ease;
+        }
+        
+        #slide-interno img{
+            display: block;
+            height: 50vh;
+            width:100%;
+            object-fit: cover;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h2>Animation - slideshow</h2>
+        <div id="slide-externo">
+            <div id="slide-interno">
+                <img src="../Imagens-Strata/01.jpg" alt="dog 1">
+                <img src="../Imagens-Strata/02.jpg" alt="dog 2">
+                <img src="../Imagens-Strata/03.jpg" alt="dog 3">
+                <img src="../Imagens-Strata/04.jpg" alt="dog 4">
+            </div>
+        </div>
+    </body>
+</html>

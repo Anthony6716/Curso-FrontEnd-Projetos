@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.header-img{
+    background-image: url(../imagens-projeto/20140226-Bridge-of-Heaven-Dusk-Camp.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 85%;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+.header-menu{
+    display: flex;
+}
+
+.menu-navegacao{
+    margin: 2vh auto;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-family: sans-serif;
+    color: #cff1ef;
+    text-shadow: 3px 3px 3px #000;
+}
+
+nav a:hover{
+    color: #fff;
+    font-size: 1.1em;
+    text-shadow: 3px 3px 3px #000;
+    transition: all .3s ease; 
+}
+
+.descricao-header{
+    width: 980px;
+    margin: 15% auto ;
+}
+
+.text-header{
+    text-align: center;
+}
+
+.text-header h1{
+    color: #fff;
+    font-size: 5.4em;
+    text-shadow: 1px 1px 1px #000;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.informacoes-header{
+    color: #f2f2f2;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 18px;
+    max-width: 300px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.bottom-header{
+    margin-top: 40px;
+}
+
+.bottom-header a{
+    text-decoration: none;
+    color: #ff1e56;
+    background-color: #fff;
+    padding: 13px 30px 13px 20px;
+    border-radius: 20px;
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.bottom-header i{
+   color: #e71414;
+   margin-left: 30px;
+}
+
+/*Section Images*/
+
+
+#fotos-mountain{
+    background-image: url(../imagens-projeto/K2-montain.jpg);
+    background-position-y: 70%;
+    background-size: cover;
+    height: 44rem;
+}
+
+.images-align{
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    position: absolute;
+    left: 6%;
+    margin-top: -30px;
+}
+
+.fotos{
+    width: 25%;
+    height: 50vh;
+    background-color: #E6EbE0;
+    padding: 0.8rem 0 0 1rem ;
+}
+
+.fotos img{
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+
+.fotos h4{
+    color: #8a8887;
+    font-family: sans-serif;
+    font-size: 0.6rem;
+}
+
+.fotos h2{
+    color: #4f4e4d;
+    font-weight: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7rem;
+    margin: 1.5rem 0 0 0.2rem;
+}
+
+.fotos-align2{
+    width: 25%;
+    
+}
+.align2-img{
+    background-image: url(../imagens-projeto/pexels-photo-2433356.jpeg);
+    background-size: cover;
+    height: 60%; 
+    width: 100%;
+}
+
+.fotos-align2 img{
+    max-width: 100%;
+}
+
+.fotos-align2 h3{
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: #f2f2f2;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.fotos-align2 h4{
+    color: #d6d0d0;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    padding: 0.2rem 0 0 1rem;
+}
+
+.align2-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E6EbE0;
+    height: 40%;
+}
+
+.align2-text h3{
+    color: #787a79;
+    font-size: 0.9rem;
+}
+
+.align2-text a{
+    color: #a2a6a4;
+    margin-left: 1rem;
+}
+.fotos-align3{
+    width: 35%;
+    height: 40%;
+}
+
+.align3-img1{
+    background-image: url(../imagens-projeto/mulher-jovem-escalando-ligado-grande-pedregulhos-ao-ar-livre_10069-2032.jpg);
+    background-position-y: 30%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.align3-img1 h3{
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: #f2f2f2;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.align3-img1 h4{
+    color: #000;
+    text-shadow: 1px 0px #1b1c1b;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    padding: 0.2rem 0 0 1rem;
+}
+
+.align3-img2{
+    background-image: url(../imagens-projeto/mulher-hiking-e-escalando-olhando-ver-mar-de-nevoa-em-manha_29393-169.jpg);
+    background-position-y: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.align3-img2 h3{
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: #f2f2f2;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.align3-img2 h4{
+    color: #d6d0d0;
+    text-shadow: 1px 1px #000;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    padding: 0.2rem 0 0 1rem;
+}
+
+.fotos-align4{
+    width: 30%;
+}
+
+
+.align4{
+    background-image: url(../imagens-projeto/pexels-photo-4007726.jpeg);
+    background-position-y: 60%;
+    width: 100%;
+    height: 80%;
+}
+
+/*Section Schoolbag*/
+
+#bag{
+    margin-top: 5rem;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schoolbag{
+    display: flex;
+    width: 80%;
+    height: 28rem;
+}
+
+.bag1{
+    width: 40%;
+    height: 28rem;
+}
+
+.bag1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bag2, .bag3{
+    width: 30%;
+    height: 28rem;
+}
+
+.bag2 img, .bag3 img{
+    width: 100%;
+    height: 50%;
+}
+
+/*Section Explore*/
+
+#explore{
+    margin: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50rem;
+}
+
+.bag-explore{
+    position: relative;
+    top: 3%;
+    left: 3%;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background-color: blue;
+    height: 50%;
+    z-index: 1;
+}
+
+.explore-trail{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    
+}
+
+.explore-trail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 25rem;
+    align-items: center;
+}
+
+.story h4{
+    color: #d6d0d0;
+    font-size: 0.8rem;
+}
+
+.story h1{
+    width: 400px;
+    line-height: 1;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2.5rem;
+}
+
+.img-explore{
+    width: 50%;
+    height: 50%;
+}
+
+.img-explore img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

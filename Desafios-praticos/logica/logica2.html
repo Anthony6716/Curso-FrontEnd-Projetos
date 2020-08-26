@@ -85,6 +85,7 @@
         }
 */
 
+/*
         var n1 = prompt("Jogador 1 Digite um número")
         n1 = parseFloat(n1)
 
@@ -99,8 +100,50 @@
 
         else{
             alert("Parabéns você foi aprovado")
-        }
+        }*/
         
+        /* IMC */
+
+        var nome = prompt("Digite seu nome:")
+
+        var altura = prompt("Digite sua altura:")
+        altura = parseFloat(altura)
+
+        var peso = prompt("Digite seu peso:")
+        peso = parseInt(peso)
+
+        var resultado = peso / (altura * altura)
+        resultado = parseInt(resultado)
+        
+
+        if(resultado <= 20){
+            alert('Seu índice foi' + "," +  resultado + "",+ 'infelizmente é um valor baixo')
+        }
+        else{
+            alert('Seu índice foi' + ","  + resultado + ","+ 'Um ótimo indice, parabéns')
+        }
+            
+        
+
+        /* Switch */
+
+      /*  var n = prompt('digite seu número')
+        n = parseInt(n)
+
+        switch(n){  //com a variável n, caso for faça tal coisa, caso nao for vá para o caso 2 e assim por diante,
+            case 1:
+                alert('boa escolha')
+                break //quando a escolha é 1 ele já saí e continua o codigo(o que vem depois)
+            case 2:
+                alert('isso ai')
+                break
+            case 3:
+                alert('muito bem')
+                break  
+
+            default: // se nao for nenhuma das opcões mostrá essse alert
+                alert('Escolha de 1 a 3')
+        }*/
     </script>
 
 </body>

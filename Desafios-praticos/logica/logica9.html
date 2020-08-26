@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="mostrarAreaAlert()">Mostrar área num alert</button>
+    <button onclick="mostrarAreaOutput()">Mostrar area no output</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        function mostrarAreaAlert(){
+            var largura = prompt('Digite a largura');
+            largura = parseFloat(largura);
+
+            var altura = prompt('Digite a altura');
+            altura = parseFloat(altura)
+
+            try{
+                var area = calcularArea(largura, altura)
+            } catch(e){
+                area = e
+            }
+            
+            alert('a area total é: ' + area)
+        }
+
+        function mostrarAreaOutput(){
+            var largura = prompt('Digite a largura');
+            largura = parseFloat(largura);
+
+            var altura = prompt('Digite a altura');
+            altura = parseFloat(altura)
+
+            try{//tenta executar isso aqui, se não der, se der erro vai pro catch
+                //interceptando o erro, para que a pessoa nao digite uma letra por exemplo
+                var area = calcularArea(largura, altura)
+            } catch(e){
+                area = e
+            }
+
+            document.querySelector('#output') .innerHTML = 'a área total é: ' + area
+        }
+
+        mostrarAreaAlert()
+
+
+        function calcularArea(l, a){
+            if(l === undefined || a === undefined){
+                throw new Error ('calulcarArea precisa receber dois números')
+            }
+
+            if( isNaN(l) || isNaN(a)){
+                throw new Error('apenas números') //quando os parametros largura e altura nao forem numeros aparace essa mensagem de erro
+            }
+            return l * a;
+        }
+
+    </script>
+
+
+</body>
+</html>

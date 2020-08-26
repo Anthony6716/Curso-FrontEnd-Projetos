@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*  LOOP WHILE 
+        var numero = prompt('digite um número:')
+        numero = parseFloat(numero)
+
+        var indice = 1;
+        //repita até que o indice seja <=1000
+
+        while(indice <= 1000){ //while = enquanto, ou seja repetir enquanto 1 for menor que 1000
+            document.write( numero + ' X ' + indice + ' = ' + (numero * indice) +' <br> ')
+
+            indice = indice + 1 //condição que torne o while falso um dia, se tiver isso o loop se torna infinito e da erro no browser
+        }
+
+        document.write('Saiu do loop') */
+
+        /*
+        var numero = 1004
+
+        while(numero <= 2017){
+            document.write( numero  + ' <br> ')
+            numero += 4
+        }*/
+
+        var ano = 1004;   
+
+        while(ano <= 2017) { //vendo qual ano é bissexto ou não
+
+            if( !(ano % 100 === 0)  || (ano % 400 === 0)){
+                document.write(ano + '<br>')
+            }
+            else{
+                document.write(ano + 'não é bissexto')
+            }
+
+            ano += 4
+        
+            
+        }
+
+    </script>
+</body>
+</html>

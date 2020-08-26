@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="mostrarArea(largura, altura)">Mostrar area</button> 
+    <!--Em parentese está o parametro(passando o valor da variavel largura e altura)-->
+
+
+    <script>
+
+        /* funções que recebem valores (conhecidas como parametros) são úteis para reaproveitar ainda mais seus códigos*/
+
+        var largura = prompt('digite a largura:')
+        largura = parseFloat(largura)
+
+        var altura = prompt('digite a altura:')
+        altura = parseFloat(altura)
+
+        function mostrarArea(l, a){
+            alert('Area total: ' + ( l * a ))
+        }
+
+    </script>
+
+
+
+</body>
+</html>

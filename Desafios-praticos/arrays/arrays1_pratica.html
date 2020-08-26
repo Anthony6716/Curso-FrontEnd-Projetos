@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lojinha de itens, clique e adicione</h1>
+    <button onclick="adiconar()">Adicionar itens</button>
+    <button onclick="listaAtual()">Lista atual</button>
+    <button onclick="limparLista()">Limpar lista</button>
+
+    <div id="output"></div>
+</body>
+
+<script>
+
+    var itens = new Array();
+    var add = ''
+    var msg = '' 
+
+    function adiconar(){
+        var add = prompt('adicione mais um item')
+        itens.push(add)
+    }
+
+    function listaAtual(){
+        for (var i = 0; i < itens.length; i++) { 
+            msg += 'produto' + (i + 1) + ': '+ produtos[i] +'<br>'
+      output.innerHTML = msg + itens
+    }
+
+    }
+    
+    function limparLista(){
+        itens = ''
+        output.innerHTML = itens
+    }
+
+    output.innerHTML = msg
+    
+</script>
+</html>

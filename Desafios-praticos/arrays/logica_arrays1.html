@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Logica de progamação</h1>
+
+    <div id="output"></div>
+    <script>
+
+// Array é um conjunto de dados agrupados entre []
+        var produtos = new Array('caneta', 'lapis', 'tesoura', 'borracha', 'caderno', 'livro'); // chamamos de indice, cada elemento entre aspas
+
+        produtos.push('apontador', 'folha') // adicionando indices na array, smepre vem após o último indice colocado diretamente na array
+
+        var output = document.querySelector('#output');
+
+        var msg = '';
+
+        for (var i = 0; i < produtos.length; i++) { //criando um loop PARA, para cada produto // length é o comprimento da array
+            msg += 'produto' + (i + 1) + ': '+ produtos[i] +'<br>' // para cada loop a gente adiciona um indice diferente, por isso colocamos a variável i, pois ela começa no indice 0
+        }
+
+        output.innerHTML = msg
+
+    </script>
+</body>
+</html>

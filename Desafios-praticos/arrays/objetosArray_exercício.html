@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays de objetos</h1>
+    <div id="output"></div>
+</body>
+
+<script>
+     var dados = [
+        {"nome": "Anthony", "email": "anthonylucas720@gmail.com"},
+        {"nome": "Lucas", "email": "lucs16@gmail.com"},
+        {"nome": "Matheus", "email": "mat678@hotmail.com"},
+        {"nome": "Rosário", "email": "rosalinda726@gmail.com"}
+    ]
+
+    var msg = '';
+
+    for (var i = 0; i < dados.length; i++) {
+        msg += '<br>' + 'Nome do usúario: ' + dados[i].nome + '<br>'
+        msg +=  'Email do usúario: ' + dados[i].email + '<br>'
+    }
+
+    /* abaixo a criação com o loop while, precisa ter uma variavel vazia, para começar o loop e x++ para o loop não ser infinito.
+    var x = 0;
+    while (dados[x]) {
+        msg+= dados[x].nome 
+        x++
+    }*/
+
+    document.querySelector('#output').innerHTML = msg
+
+</script>
+</html>

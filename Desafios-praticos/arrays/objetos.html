@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objetos</h1>
+    <button onclick="clique()">Clique aqui</button>
+    <div id="output"></div>
+</body>
+
+<script>
+
+//objetos são conjunto de dados agrupados entre {}
+    var produto = new Object()
+    produto.nome = "Tenis azul"
+    produto.estoque =  10 
+    produto.preco = "20 R$"
+
+    produto.comprar = function(qtd){
+        if(!qtd){ //se eu nao definir uma quantidade no parametro, vai ser 1 que vai diminuir, caso eu passe sai do if e executa o console.log
+            qtd = 1
+        }
+
+        console.log('Comprou caneta')
+        this.estoque = this.estoque - qtd
+        console.log(this.estoque)
+    }
+
+    var msg = '';
+
+    msg += 'Nome: ' + produto.nome + '<br>'
+    msg += 'Preço: ' + produto.preco + '<br>'
+    msg += 'Estoque: ' + produto.estoque + '<br>'
+
+    document.querySelector('#output')
+    .innerHTML = msg
+    
+
+</script>
+
+</html>
